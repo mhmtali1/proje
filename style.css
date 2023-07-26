@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Pangolin;
+    src: url(assets/fonts/Pangolin/Pangolin-Regular.ttf);
+    font-weight: 500;
+}
+
+*{
+    font-family: "Pangolin" sans-serif;
+    box-sizing: border-box;
+    color: #424242;
+}
+
+body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.app_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app_logo .app_gif{
+    margin-right: 1rem;
+}
+
+.app__links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.app__links li{
+    margin-right: 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.app__links li.active{
+    color: #5A47AB;
+    font-weight: 600;
+}
+
+.app_showcase{
+    display: flex;
+    margin: 5rem;
+}
+
+.app_showcase-info{
+    flex: 6;
+    padding: 0 3rem;
+}
+
+.app_showcase-info h1, h3{
+    font-size: 52px;
+    margin: 0;
+}
+
+.app_showcase-info h1{
+     color: #d05270;
+     font-weight: bold;
+}
+
+.app_showcase-info h3{
+    font-weight: 500; 
+}
+
+.app_showcase-info p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.app_showcase-image{
+    flex: 4;
+    padding: 0 3rem; 
+}
+
+.app_links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.app_links .app_link{
+    color: #ffffff;
+    font-size: 12px;
+    width: 30%;
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__links .app_link img{
+    margin-right: 2rem;
+}
+
+.app_links .app_link.Twitter{
+    background-color: #47acdf;
+}
+
+.app_links .app_link.Instagram{
+    background-color: chocolate;
+}
+
+.app_links .app_link.Github{
+    background-color: #424242;
+}
+
+.app_blog-categories{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.app_blog-categories .item{
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.app_blog-categories .item.active{
+    color: #d05270;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #d05270;
+    padding: 0 2rem;
+}
+
+.app_post-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.app_post-list .app_post-card{
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 2rem 0;
+}
+
+.app_post-list .app_post-card .post-image{
+    height: 300px;
+    width: max-content;
+}
+
+.app_post-list .app_post-card .post-date{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.app_post-list .app_post-card .post-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: #d05270;    
+}
+
+.app_post-list .app_post-card .post-info{
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.app_post-list .app_post-card .post-link{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #d05270;
+    border-bottom: 1px solid #d05270;
+    padding-bottom: 5px;
+    width: fit-content;
+    margin-top: 2rem;
+}
